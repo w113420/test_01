@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>骰子练习</title>
+    <style>
+        body{
+            background: linear-gradient(to bottom, #222, #333);
+        }
+        .dice-box{
+            margin: 200px auto 0;
+            min-width: 800px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .common{
+            padding: 4px;
+            background-color: #e7e7e7;
+            width: 104px;
+            height: 104px;
+            -o-object-fit: contain;
+            object-fit: contain;
+            box-shadow: inset 0 5px white, inset 0 -5px #bbb, inset 5px 0 #d7d7d7, inset -5px 0 #d7d7d7;
+            border-radius: 10%;
+            display: inline-block;
+        }
+        .pip {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: #333;
+            box-shadow: inset 0 3px #111, inset 0 -3px #555;
+        }
+        .one-face{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .two-face {
+            display: flex;
+            justify-content: space-between;
+        }
+        .two-face span:nth-child(2){
+            align-self: flex-end;
+        }
+        .three-face{
+            display: flex;
+            justify-content: space-between;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        /* .three-face span:nth-child(2){
+            align-self: center;
+        }
+        .three-face span:nth-child(3){
+            align-self: flex-end;
+        } */
+        .four-face{     
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+        }
+        .four-face div{
+           display: flex;
+           justify-content: space-between;
+        }
+        .five-face{
+            display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+        }
+        .five-face div{
+           display: flex;
+           justify-content: space-between;
+        }
+        .lo{
+            margin-top: 50%;
+            transform: translate(0,-50%);
+        }
+        .six-face{
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: space-between;
+            /* transform: rotate(90deg); */
+        }
+        .six-face div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="dice-box">
+        <div class="common one-face">
+            <span class="pip"></span>
+        </div>
+    
+        <div class="common two-face">
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </div>
+    
+        <div class="common three-face">
+            <span class="pip"></span>
+            <span class="pip "></span>
+            <span class="pip"></span>
+        </div>
+    
+        <div class="common four-face">
+            <div >
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+            <div>
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+        </div>
+    
+        <div class="common five-face">
+            <div>
+                <span class="pip"></span>
+                <span class="pip lo"></span>
+                <span class="pip"></span>
+            </div>
+            <div>
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+        </div>
+    
+        <div class="common six-face">
+            <div>
+                <span class="pip"></span>
+                <span class="pip pl"></span>
+                <span class="pip"></span>
+            </div>
+            <div>
+                <span class="pip"></span>
+                <span class="pip lp"></span>
+                <span class="pip"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
