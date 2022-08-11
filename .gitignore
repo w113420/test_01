@@ -1,0 +1,4 @@
+# 忽略abc文件
+abc.html
+#忽略 test文件目录下所有的文件
+test/
