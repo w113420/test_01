@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            animation: li 3s;
+        }
+        /* 两种方法一from，to两个界面 */
+        @keyframes li{
+            from{
+                width: 900px;
+                height: 900px;
+                background-color: lightcoral;
+            }
+            to{
+                width: 600px;
+                height: 600px;
+                background-color: blue;
+            }
+        }
+        /* @keyframes li{
+            10%{
+                width: 300px;
+                height: 500px;
+            }
+            59%{
+                width: 700px;
+                height: 700px;
+            }
+            90%{
+                width: 800px;
+                height: 800px;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
